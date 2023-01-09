@@ -1,0 +1,392 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    background: #000;
+    color: #fff;
+    font-family: 'Gilroy';
+    padding-bottom: 200px;
+}
+.container {
+    width: 780px;
+    margin: auto;
+}
+section {
+}
+section.isHero {
+    padding: 70px 0 60px;
+}
+section.isForm {
+}
+section.isText, section.isForm {
+    margin-top: 180px;
+}
+section.isVideo {
+    /*display: none;*/
+}
+a, button {
+    all: unset;
+    cursor: pointer;
+    font-weight: normal;
+}
+button.isSm {
+    padding: 8px 22px;
+    font-size: 11px;
+    line-height: 12px;
+}
+a.isMd, button.isMd {
+    padding: 9px 27px;
+    font-size: 17px;
+}
+button.isLg {
+    padding: 16px 35px;
+    font-size: 24px;
+}
+button.isState {
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+button.isState.isActive {
+    background: #ffffff;
+    color: #000000
+}
+button.isCard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    background: #ffffff;
+    color: #000000;
+    border-radius: 12px;
+    padding: 4px 12px 4px 12px;
+    margin-left: auto;
+}
+button.isCard img {
+    width: 9px;
+}
+button.isCard img:not(.isActive) {
+    display: none;
+}
+button.isCard span {
+    position: relative;
+    margin-left: 5px;
+    font-size: 10px;
+    font-weight: 500;
+    top: 1px;
+}
+a.isOpenSea, button.isOpenSea {
+    background: #6385FF;
+    border-radius: 30px;
+    margin-left: auto;
+}
+button.isSend {
+    text-decoration: underline;
+    border: 2px solid #666666;
+    border-radius: 6px;
+    margin-top: 30px;
+    margin-left: auto;
+    padding: 20px 50px;
+    font-size: 48px;
+}
+button.isShow {
+    text-decoration: underline;
+    border: 1px solid #ffffff;
+    border-radius: 35px;
+    margin: auto;
+    margin-top: 50px;
+    display: block;
+}
+button.isShow:not(.isActive) {
+    display: none;
+}
+button.isCopy {
+    text-decoration: underline;
+}
+button.isPrice {
+    margin-left: auto;
+    background: #333333;
+    border-radius: 30px;
+}
+button.isPrice span:not(.isActive) {
+    display: none;
+}
+button.isPlayPause {
+    margin-top: 5px;
+}
+button.isIcon {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    display: none;
+
+}
+button.isIcon.isActive{
+    display: flex;
+}
+button.isIcon img {
+    width: 40px;
+    height: 40px;
+}
+.box.isImage {
+    position: relative;
+}
+.box.isButtons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.box.isCard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 15px;
+}
+h1, h2 {
+    font-size: 89px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 90px;
+}
+h1.isHero {
+    max-width: 750px;
+}
+h2.isText {
+    max-width: 500px;
+}
+header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 120px;
+}
+span.isCardTile {
+    position: relative;
+    top: 2px;
+    display: block;
+    font-size: 11px;
+}
+p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+p.isMain {
+    font-size: 48px;
+    font-weight: 300;
+}
+p.isDesc {
+    margin-top: 50px;
+}
+form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+input.isForm, textarea.isForm {
+    background: transparent;
+    width: 100%;
+    border: 2px solid #666666;
+    color: #666666;
+    font-family: 'Gilroy';
+    font-size: 48px;
+    padding: 30px 30px;
+    border-radius: 4px;
+}
+input:focus, input:focus-visible, textarea:focus, textarea:focus-visible {
+    border-color: #ffffff;
+    outline-color: transparent;
+}
+textarea {
+    margin-top: 40px;
+}
+input.isForm {
+    height: 115px;
+    margin-top: 30px;
+}
+input.isVolume {
+    margin-right: 15px;
+    width: 80px;
+    height: 7px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+input.isVolume::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: ew-resize;
+    -webkit-box-shadow: 0 0 2px 0 #555;
+    box-shadow: 0 0 2px 0 #555;
+}
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.row.isNewest .image {
+    background: rgba(255, 255, 255, 0.8);
+}
+.row:not(.isActive) {
+    display: none;
+}
+.col {
+    width: calc(100% / 3 - 30px);
+    margin-top: 35px;
+}
+.image {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+}
+.image img {
+    width: 100%;
+}
+iframe {
+    display: none;
+}
+#player {
+    margin-left: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+#player img {
+    width: 30px;
+}
+img.isVolume:not(.isActive) {
+    display: none;
+}
+img.isLogo {
+    width: 50px;
+}
+#volume {
+    position: relative;
+    height: 3px;
+    width: 70px;
+    background: #2c2c2c;
+    margin-left: 5px;
+}
+.audio{
+    visibility: hidden;
+    position: absolute;
+}
+.ui-slider-range-min {
+    height: 3px;
+    width: 300px;
+    position: absolute;
+    background: #ffffff;
+    border: none;
+    outline: none;
+}
+.ui-slider-handle {
+    width: 12px;
+    height: 12px;
+    border-radius: 20px;
+    background: #FFF;
+    position: absolute;
+    margin-left: -6px;
+    margin-top: -5px;
+    cursor: pointer;
+    outline: none;
+}
+@media (max-width: 850px) {
+    header {
+        padding-top: 20px;
+    }
+    .col {
+        width: calc(100% / 3 - 3vw);
+    }
+    .container {
+        width: calc(100% - 40px)
+    }
+    h1, h2 {
+        font-size: 10vw;
+        line-height: 10vw;
+    }
+    section.isHero {
+        padding: 8vw 0;
+    }
+    h2.isText {
+        font-size: 12vw;
+    }
+    p.isMain, input.isForm, textarea.isForm {
+        font-size: 5vw;
+    }
+    section.isText, section.isForm {
+        margin-top: 20vw;
+    }
+    p.isDesc {
+        margin-top: 5vw;
+    }
+    input.isForm {
+        height: 15vw;
+    }
+    button.isSend {
+        padding: 4vw 12vw;
+        font-size: 5.5vw;
+    }
+}
+@media (max-width: 575px) {
+    .col {
+        width: calc(100% / 2 - 3vw);
+        margin-top: 25px;
+    }
+    input.isForm, textarea.isForm {
+        padding: 4vw;
+        margin-top: 4vw;
+    }
+    body {
+        padding-bottom: 30vw;
+    }
+    button.isState {
+        margin-right: 10px;
+    }
+    button.isSend {
+        margin-top: 4vw;
+    }
+    button.isShow {
+        font-size: 6vw;
+    }
+}
+@media (max-width: 520px) {
+    button.isPrice {
+        display: none;
+    }
+}
+@media (max-width: 400px) {
+    #player {
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+    a.isOpenSea {
+        padding: 2vw 5vw;
+        font-size: 4vw;
+    }
+}

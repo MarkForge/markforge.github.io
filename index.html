@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+  <link rel="stylesheet"
+        href="index.css">
+  <link rel="stylesheet"
+        href="fonts/gilroy/stylesheet.css">
+  <title>Hydro</title>
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+</head>
+<body>
+<audio controls
+       class="audio">
+  <source src="music/main.wav">
+</audio>
+<div class="container">
+  <header>
+    <a href="/"
+       class="isLogo">
+      <img class="img isLogo"
+           alt="logo image"
+           src="images/logo.svg">
+    </a>
+    <div id="player">
+      <iframe id="video"
+              type="text/html"
+              allow="autoplay"
+              width="640"
+              height="360"
+              src="https://www.youtube.com/embed/uzIB2qVIaVM?enablejsapi=1&autoplay=1&rel=0&html5=1&showinfo=0&controls=0"
+              frameborder="0"></iframe>
+      <button class="isPlayPause">
+        <img src="images/volume-on.svg"
+             class="isVolume"
+             alt="icon">
+        <img src="images/volume-off.svg"
+             class="isVolume isActive"
+             alt="icon">
+      </button>
+      <div id="volume"></div>
+      <span class="val vol"></span>
+    </div>
+    <a class="isOpenSea isMd"
+       href="https://www.opensea.io"
+       target="_blank">OpenSea
+    </a>
+  </header>
+  <section class="isHero">
+    <h1 class="isHero">The rave is on, please remember to stay hydrated.</h1>
+  </section>
+  <section class="isCards">
+    <div class="box isButtons">
+      <button class="isState isSm isActive">Oldest first</button>
+      <button class="isState isSm">Newest first</button>
+      <button class="isPrice isSm">
+        <span class="isActive">Price: ETH</span>
+        <span>Price: USDT</span>
+      </button>
+    </div>
+    <div class="row isOldest isActive">
+      <div class="col">
+        <div class="card">
+          <div class="box isImage">
+            <button class="button isIcon isPlay isActive">
+              <img src="images/play.svg"
+                   alt="image of player action">
+            </button>
+            <button class="button isIcon isStop">
+              <img src="images/stop.svg"
+                   alt="image of player action">
+            </button>
+            <div class="image">
+              <img src="images/1.png"
+                   alt="image of currency">
+            </div>
+          </div>
+          <div class="box isCard">
+            <span class="isCardTile">Raver #1</span>
+            <button class="isCard isSm">
+              <img src="images/eth.svg"
+                   class="isActive"
+                   alt="icon">
+              <img src="images/usd.svg"
+                   alt="icon">
+              <span>0.1</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="box isImage">
+            <button class="button isIcon isPlay isActive">
+              <img src="images/play.svg"
+                   alt="image of player action">
+            </button>
+            <button class="button isIcon isStop">
+              <img src="images/stop.svg"
+                   alt="image of player action">
+            </button>
+            <div class="image">
+              <img src="images/2.png"
+                   alt="image of currency">
+            </div>
+          </div>
+          <div class="box isCard">
+            <span class="isCardTile">Raver #2</span>
+            <button class="isCard isSm">
+              <img src="images/eth.svg"
+                   class="isActive"
+                   alt="icon">
+              <img src="images/usd.svg"
+                   alt="icon">
+              <span>0.1</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="box isImage">
+            <button class="button isIcon isPlay isActive">
+              <img src="images/play.svg"
+                   alt="image of player action">
+            </button>
+            <button class="button isIcon isStop">
+              <img src="images/stop.svg"
+                   alt="image of player action">
+            </button>
+            <div class="image">
+              <img src="images/3.png"
+                   alt="image of currency">
+            </div>
+          </div>
+          <div class="box isCard">
+            <span class="isCardTile">Raver #3</span>
+            <button class="isCard isSm">
+              <img src="images/eth.svg"
+                   class="isActive"
+                   alt="icon">
+              <img src="images/usd.svg"
+                   alt="icon">
+              <span>0.1</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="box isImage">
+            <button class="button isIcon isPlay isActive">
+              <img src="images/play.svg"
+                   alt="image of player action">
+            </button>
+            <button class="button isIcon isStop">
+              <img src="images/stop.svg"
+                   alt="image of player action">
+            </button>
+            <div class="image">
+              <img src="images/4.png"
+                   alt="image of currency">
+            </div>
+          </div>
+          <div class="box isCard">
+            <span class="isCardTile">Raver #4</span>
+            <button class="isCard isSm">
+              <img src="images/eth.svg"
+                   class="isActive"
+                   alt="icon">
+              <img src="images/usd.svg"
+                   alt="icon">
+              <span>0.1</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="box isImage">
+            <button class="button isIcon isPlay isActive">
+              <img src="images/play.svg"
+                   alt="image of player action">
+            </button>
+            <button class="button isIcon isStop">
+              <img src="images/stop.svg"
+                   alt="image of player action">
+            </button>
+            <div class="image">
+              <img src="images/5.png"
+                   alt="image of currency">
+            </div>
+          </div>
+          <div class="box isCard">
+            <span class="isCardTile">Raver #5</span>
+            <button class="isCard isSm">
+              <img src="images/eth.svg"
+                   class="isActive"
+                   alt="icon">
+              <img src="images/usd.svg"
+                   alt="icon">
+              <span>0.1</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="box isImage">
+            <button class="button isIcon isPlay isActive">
+              <img src="images/play.svg"
+                   alt="image of player action">
+            </button>
+            <button class="button isIcon isStop">
+              <img src="images/stop.svg"
+                   alt="image of player action">
+            </button>
+            <div class="image">
+              <img src="images/6.png"
+                   alt="image of currency">
+            </div>
+          </div>
+          <div class="box isCard">
+            <span class="isCardTile">Raver #6</span>
+            <button class="isCard isSm">
+              <img src="images/eth.svg"
+                   class="isActive"
+                   alt="icon">
+              <img src="images/usd.svg"
+                   alt="icon">
+              <span>0.1</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="box isImage">
+            <button class="button isIcon isPlay isActive">
+              <img src="images/play.svg"
+                   alt="image of player action">
+            </button>
+            <button class="button isIcon isStop">
+              <img src="images/stop.svg"
+                   alt="image of player action">
+            </button>
+            <div class="image">
+              <img src="images/7.png"
+                   alt="image of currency">
+            </div>
+          </div>
+          <div class="box isCard">
+            <span class="isCardTile">Raver #7</span>
+            <button class="isCard isSm">
+              <img src="images/eth.svg"
+                   class="isActive"
+                   alt="icon">
+              <img src="images/usd.svg"
+                   alt="icon">
+              <span>0.1</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="box isImage">
+            <button class="button isIcon isPlay isActive">
+              <img src="images/play.svg"
+                   alt="image of player action">
+            </button>
+            <button class="button isIcon isStop">
+              <img src="images/stop.svg"
+                   alt="image of player action">
+            </button>
+            <div class="image">
+              <img src="images/8.png"
+                   alt="image of currency">
+            </div>
+          </div>
+          <div class="box isCard">
+            <span class="isCardTile">Raver #8</span>
+            <button class="isCard isSm">
+              <img src="images/eth.svg"
+                   class="isActive"
+                   alt="icon">
+              <img src="images/usd.svg"
+                   alt="icon">
+              <span>0.1</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="box isImage">
+            <button class="button isIcon isPlay isActive">
+              <img src="images/play.svg"
+                   alt="image of player action">
+            </button>
+            <button class="button isIcon isStop">
+              <img src="images/stop.svg"
+                   alt="image of player action">
+            </button>
+            <div class="image">
+              <img src="images/9.png"
+                   alt="image of currency">
+            </div>
+          </div>
+          <div class="box isCard">
+            <span class="isCardTile">Raver #9</span>
+            <button class="isCard isSm">
+              <img src="images/eth.svg"
+                   class="isActive"
+                   alt="icon">
+              <img src="images/usd.svg"
+                   alt="icon">
+              <span>0.1</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row isNewest">
+      <div class="col">
+        <div class="card">
+          <div class="box isImage">
+            <button class="button isIcon isPlay isActive">
+              <img src="images/play.svg"
+                   alt="image of player action">
+            </button>
+            <button class="button isIcon isStop">
+              <img src="images/stop.svg"
+                   alt="image of player action">
+            </button>
+            <div class="image">
+              <img src="images/3.png"
+                   alt="image of currency">
+            </div>
+          </div>
+          <div class="box isCard">
+            <span class="isCardTile">Raver #3</span>
+            <button class="isCard isSm">
+              <img src="images/eth.svg"
+                   class="isActive"
+                   alt="icon">
+              <img src="images/usd.svg"
+                   alt="icon">
+              <span>0.1</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="box isImage">
+            <button class="button isIcon isPlay isActive">
+              <img src="images/play.svg"
+                   alt="image of player action">
+            </button>
+            <button class="button isIcon isStop">
+              <img src="images/stop.svg"
+                   alt="image of player action">
+            </button>
+            <div class="image">
+              <img src="images/6.png"
+                   alt="image of currency">
+            </div>
+          </div>
+          <div class="box isCard">
+            <span class="isCardTile">Raver #6</span>
+            <button class="isCard isSm">
+              <img src="images/eth.svg"
+                   class="isActive"
+                   alt="icon">
+              <img src="images/usd.svg"
+                   alt="icon">
+              <span>0.1</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="box isImage">
+            <button class="button isIcon isPlay isActive">
+              <img src="images/play.svg"
+                   alt="image of player action">
+            </button>
+            <button class="button isIcon isStop">
+              <img src="images/stop.svg"
+                   alt="image of player action">
+            </button>
+            <div class="image">
+              <img src="images/2.png"
+                   alt="image of currency">
+            </div>
+          </div>
+          <div class="box isCard">
+            <span class="isCardTile">Raver #2</span>
+            <button class="isCard isSm">
+              <img src="images/eth.svg"
+                   class="isActive"
+                   alt="icon">
+              <img src="images/usd.svg"
+                   alt="icon">
+              <span>0.1</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="box isImage">
+            <button class="button isIcon isPlay isActive">
+              <img src="images/play.svg"
+                   alt="image of player action">
+            </button>
+            <button class="button isIcon isStop">
+              <img src="images/stop.svg"
+                   alt="image of player action">
+            </button>
+            <div class="image">
+              <img src="images/5.png"
+                   alt="image of currency">
+            </div>
+          </div>
+          <div class="box isCard">
+            <span class="isCardTile">Raver #5</span>
+            <button class="isCard isSm">
+              <img src="images/eth.svg"
+                   class="isActive"
+                   alt="icon">
+              <img src="images/usd.svg"
+                   alt="icon">
+              <span>0.1</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="box isImage">
+            <button class="button isIcon isPlay isActive">
+              <img src="images/play.svg"
+                   alt="image of player action">
+            </button>
+            <button class="button isIcon isStop">
+              <img src="images/stop.svg"
+                   alt="image of player action">
+            </button>
+            <div class="image">
+              <img src="images/7.png"
+                   alt="image of currency">
+            </div>
+          </div>
+          <div class="box isCard">
+            <span class="isCardTile">Raver #7</span>
+            <button class="isCard isSm">
+              <img src="images/eth.svg"
+                   class="isActive"
+                   alt="icon">
+              <img src="images/usd.svg"
+                   alt="icon">
+              <span>0.1</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="box isImage">
+            <button class="button isIcon isPlay isActive">
+              <img src="images/play.svg"
+                   alt="image of player action">
+            </button>
+            <button class="button isIcon isStop">
+              <img src="images/stop.svg"
+                   alt="image of player action">
+            </button>
+            <div class="image">
+              <img src="images/4.png"
+                   alt="image of currency">
+            </div>
+          </div>
+          <div class="box isCard">
+            <span class="isCardTile">Raver #4</span>
+            <button class="isCard isSm">
+              <img src="images/eth.svg"
+                   class="isActive"
+                   alt="icon">
+              <img src="images/usd.svg"
+                   alt="icon">
+              <span>0.1</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="box isImage">
+            <button class="button isIcon isPlay isActive">
+              <img src="images/play.svg"
+                   alt="image of player action">
+            </button>
+            <button class="button isIcon isStop">
+              <img src="images/stop.svg"
+                   alt="image of player action">
+            </button>
+            <div class="image">
+              <img src="images/8.png"
+                   alt="image of currency">
+            </div>
+          </div>
+          <div class="box isCard">
+            <span class="isCardTile">Raver #8</span>
+            <button class="isCard isSm">
+              <img src="images/eth.svg"
+                   class="isActive"
+                   alt="icon">
+              <img src="images/usd.svg"
+                   alt="icon">
+              <span>0.1</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="box isImage">
+            <button class="button isIcon isPlay isActive">
+              <img src="images/play.svg"
+                   alt="image of player action">
+            </button>
+            <button class="button isIcon isStop">
+              <img src="images/stop.svg"
+                   alt="image of player action">
+            </button>
+            <div class="image">
+              <img src="images/1.png"
+                   alt="image of currency">
+            </div>
+          </div>
+          <div class="box isCard">
+            <span class="isCardTile">Raver #1</span>
+            <button class="isCard isSm">
+              <img src="images/eth.svg"
+                   class="isActive"
+                   alt="icon">
+              <img src="images/usd.svg"
+                   alt="icon">
+              <span>0.1</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="box isImage">
+            <button class="button isIcon isPlay isActive">
+              <img src="images/play.svg"
+                   alt="image of player action">
+            </button>
+            <button class="button isIcon isStop">
+              <img src="images/stop.svg"
+                   alt="image of player action">
+            </button>
+            <div class="image">
+              <img src="images/9.png"
+                   alt="image of currency">
+            </div>
+          </div>
+          <div class="box isCard">
+            <span class="isCardTile">Raver #9</span>
+            <button class="isCard isSm">
+              <img src="images/eth.svg"
+                   class="isActive"
+                   alt="icon">
+              <img src="images/usd.svg"
+                   alt="icon">
+              <span>0.1</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="isShow isLg isActive">Show More</button>
+  </section>
+  <section class="isText">
+    <h2 class="isText">Ravers Foundation</h2>
+    <p class="isMain isDesc">We come with the message that one main humankind asset will always remain water. Lets
+      respect nature, lets protect nature.
+    </p>
+  </section>
+  <section class="isText">
+    <h2 class="isText">Utility</h2>
+    <p class="isMain isDesc">We move towards making ravers an unprecedented know-how pass to musical events. Signed by
+      artists, ravers will provide limited or unlimited number of entries to specific events.
+    </p>
+    <p class="isMain isDesc">In the end it's a fun experiment and new experience.
+    </p>
+  </section>
+  <section class="isText">
+    <h2 class="isText">Roadmap</h2>
+    <p class="isMain isDesc">Building up to 200 custom ravers, based on which will later generate more tokens. Have no
+      idea about the final amount but will follow the “less is more” rule and Follow up ;)
+    </p>
+  </section>
+  <section class="isForm">
+    <p class="isMain">
+      <button class="isCopy">Click here</button>
+      to copy our email address
+      or use the form below:
+    </p>
+    <form action="">
+      <input type="text"
+             class="isForm"
+             placeholder="your email">
+      <textarea name="message"
+                class="isForm"
+                rows="5"
+                placeholder="your message and name"
+      ></textarea>
+      <button class="isSend isXl"
+              type="submit">Send
+      </button>
+    </form>
+  </section>
+
+</div>
+<script>
+  //////////////////////////////////
+  function setPlayListeners() {
+    document.querySelectorAll('button.isIcon.isPlay').forEach(function (el) {
+      el.addEventListener('click', function () {
+        document.querySelectorAll('button.isIcon.isStop').forEach(function (el) {
+          el.classList.remove('isActive')
+        })
+        document.querySelectorAll('button.isIcon.isPlay').forEach(function (el) {
+          el.classList.add('isActive')
+        })
+        document.querySelector('.audio').currentTime = 0;
+        document.querySelector('.audio').play();
+        this.classList.remove('isActive');
+        this.nextElementSibling.classList.add('isActive');
+      })
+    })
+    document.querySelectorAll('button.isIcon.isStop').forEach(function (el) {
+      el.addEventListener('click', function () {
+        this.previousElementSibling.classList.add('isActive');
+        document.querySelector('.audio').pause();
+        document.querySelector('.audio').currentTime = 0;
+        document.querySelectorAll('button.isIcon.isStop').forEach(function (el) {
+          el.classList.remove('isActive')
+        })
+      })
+    })
+  }
+
+  document.querySelectorAll('button.isState').forEach(function (el) {
+    el.addEventListener('click', function () {
+      document.querySelectorAll('button.isState').forEach(function (el) {
+        el.classList.toggle('isActive')
+      })
+      document.querySelectorAll('.row').forEach(function (el) {
+        el.classList.toggle('isActive')
+      })
+    })
+  })
+  document.querySelector('button.isShow').addEventListener('click', function () {
+    this.classList.remove('isActive');
+    document.querySelectorAll('.row').forEach(function (el) {
+      insertAfter(el, el.cloneNode(true));
+    })
+    setPlayListeners()
+  })
+  document.querySelector('button.isCopy').addEventListener('click', function () {
+    copyToClipboard('test word')
+  })
+  document.querySelector('button.isPrice').addEventListener('click', function () {
+    document.querySelectorAll('button.isPrice span').forEach(function (el) {
+      el.classList.toggle('isActive')
+    })
+    document.querySelectorAll('button.isCard img').forEach(function (el) {
+      el.classList.toggle('isActive')
+    })
+  })
+  setPlayListeners()
+
+  //////////////////////////////////
+  function insertAfter(referenceNode, newNode) {
+    referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+  }
+
+  let tag = document.createElement("script");
+  tag.src = "https://www.youtube.com/iframe_api";
+  let firstScriptTag = document.getElementsByTagName("script")[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  let player;
+
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player("video", {
+      events: {
+        onReady: onPlayerReady,
+        onStateChange: onPlayerStateChange
+      }
+    });
+  }
+
+  function onPlayerReady(event) {
+    $("button.isPlayPause").click(function () {
+      document.querySelectorAll('img.isVolume').forEach(function (el) {
+        el.classList.toggle('isActive');
+        if (el.classList.contains('isActive')) {
+          player.pauseVideo();
+        } else {
+          player.playVideo();
+        }
+      })
+    });
+
+  };
+
+  function onPlayerStateChange(event) {
+
+  }
+
+  $("#volume").slider({
+    min: 0,
+    max: 100,
+    value: 40,
+    range: "min",
+    slide: function (event, ui) {
+      player.setVolume(ui.value);
+    }
+  });
+
+  //////////////////////////////////
+  function copyToClipboard() {
+    let aux = document.createElement("input");
+    aux.setAttribute("value", 'test word');
+    document.body.appendChild(aux);
+    aux.select();
+    document.execCommand("copy");
+    document.body.removeChild(aux);
+  }
+
+  //////////////////////////////////
+</script>
+</body>
+</html>
